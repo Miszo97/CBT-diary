@@ -1,10 +1,3 @@
-//
-//  situation.swift
-//  CBT Thought Diary
-//
-//  Created by Artur Spek on 09/07/2025.
-//
-
 import SwiftUI
 
 struct Action: View {

@@ -30,20 +30,13 @@ struct ContentView: View {
             SituationInputView(situation: $situation)
             ThoughtInputView(thought: $thought)
             
-            let first3Emotions = Array(emotions.prefix(3))
-            let next3Emotions = Array(emotions.dropFirst(3))
-
             HStack {
-                ForEach(first3Emotions, id: \.0) { category in
-                    EmotionPickerView(title: category.0, options: category.1, selected: $selected)
+                ForEach(emotions, id: \.self) { emotion in
+                    EmotionButton(selectedEmotions: $selected, emotionName: emotion)
                 }
             }
 
-            HStack {
-                ForEach(next3Emotions, id: \.0) { category in
-                    EmotionPickerView(title: category.0, options: category.1, selected: $selected)
-                }
-            }
+
             if !selected.isEmpty {
                 Text(
                     selected.map { emotion in
@@ -65,7 +58,7 @@ struct ContentView: View {
                 Button("Save") {
                     let allEmotions = selected.map { $0 }
                     
-                    if (situation.isEmpty || thought.isEmpty || action.isEmpty){
+                    if (situation.isEmpty || thought.isEmpty || action.isEmpty || selected.isEmpty){
                     }
                     else {
                         
@@ -85,16 +78,16 @@ struct ContentView: View {
                         
                         saveRecord(newRecord)
                         records = loadRecords()
+                        selected = []
+                        situation = ""
+                        thought = ""
+                        action = ""
                     }
                 }.padding(.horizontal)
                 
                 CopyAndRemoveButton(combinedText: combinedText, records: $records)
                 
                 Button("Clear") {
-                    selected = []
-                    situation = ""
-                    thought = ""
-                    action = ""
                     date = Date()
                 }.padding(.horizontal)
             }
@@ -119,7 +112,3 @@ struct ContentView: View {
 #Preview {
     ContentView(date: Date())
 }
-
-
-
-

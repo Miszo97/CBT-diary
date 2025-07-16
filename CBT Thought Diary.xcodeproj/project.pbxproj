@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		751CA1AC2E214286001C3313 /* test_expanding_view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 751CA1AB2E214286001C3313 /* test_expanding_view.swift */; };
+		75B9EEE82E2586C9004B136D /* EmotionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75B9EEE72E2586C9004B136D /* EmotionButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		751CA1AB2E214286001C3313 /* test_expanding_view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test_expanding_view.swift; sourceTree = "<group>"; };
+		75B9EEE72E2586C9004B136D /* EmotionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionButton.swift; sourceTree = "<group>"; };
 		75F92A8D2E1EEF9800C4974E /* CBT Thought Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBT Thought Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -40,6 +42,7 @@
 				751CA1AB2E214286001C3313 /* test_expanding_view.swift */,
 				75F92A8F2E1EEF9800C4974E /* CBT Thought Diary */,
 				75F92A8E2E1EEF9800C4974E /* Products */,
+				75B9EEE72E2586C9004B136D /* EmotionButton.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +128,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75B9EEE82E2586C9004B136D /* EmotionButton.swift in Sources */,
 				751CA1AC2E214286001C3313 /* test_expanding_view.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

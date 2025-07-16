@@ -1,6 +1,6 @@
 import Foundation
 
-let emotions: [(String, [String])] = [
+let emotions_old: [(String, [String])] = [
     ("Radość", [
         "Akceptacja", "Beztroska", "Błogość", "Czułość", "Docenienie", "Duma", "Entuzjazm", "Ekscytacja", "Komfort",
         "Ożywienie", "Odprężenie", "Podniecenie", "Przyjemność", "Rozbawienie", "Rozkosz", "Radość", "Satysfakcja",
@@ -33,3 +33,5 @@ let emotions: [(String, [String])] = [
         "Zdziwienie", "Zrozumienie"
     ])
 ]
+
+let emotions: [String] = ["Lęk", "Smutek", "Złość"]
