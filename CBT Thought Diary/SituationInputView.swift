@@ -12,7 +12,6 @@ struct SituationInputView: View {
                 .foregroundColor(.primary)
 
             ZStack {
-                // Background rectangle
                 RoundedRectangle(cornerRadius: 8)
                     .fill(Color.gray.opacity(0.2))
                     .overlay(
@@ -20,7 +19,6 @@ struct SituationInputView: View {
                             .stroke(Color.gray.opacity(0.3), lineWidth: 1)
                     )
 
-                // Transparent tap layer
                 TextField("Describe the situation...", text: $situation)
                     .padding(12)
                     .focused($isFocused)
