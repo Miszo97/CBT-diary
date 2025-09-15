@@ -21,6 +21,13 @@
 			remoteGlobalIDString = 75F92A8C2E1EEF9800C4974E;
 			remoteInfo = "CBT Thought Diary";
 		};
+		7598B2912E78CB4B00859D57 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F92A852E1EEF9800C4974E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F92A8C2E1EEF9800C4974E;
+			remoteInfo = "CBT Thought Diary";
+		};
 		75AE4F752E76ED79007CB271 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 75F92A852E1EEF9800C4974E /* Project object */;
@@ -33,11 +40,17 @@
 /* Begin PBXFileReference section */
 		758000052E76F7B9005DF751 /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7580FFE32E76F71E005DF751 /* ExercisesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExercisesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7598B28D2E78CB4B00859D57 /* CBT Thought DiaryTests 2.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBT Thought DiaryTests 2.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75AE4F742E76ED79007CB271 /* CBT Thought DiaryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CBT Thought DiaryTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F92A8D2E1EEF9800C4974E /* CBT Thought Diary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CBT Thought Diary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		7598B28E2E78CB4B00859D57 /* CBT Thought DiaryTests 2 */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "CBT Thought DiaryTests 2";
+			sourceTree = "<group>";
+		};
 		75F92A8F2E1EEF9800C4974E /* CBT Thought Diary */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "CBT Thought Diary";
@@ -54,6 +67,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7580FFE02E76F71E005DF751 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7598B28A2E78CB4B00859D57 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -81,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				75F92A8F2E1EEF9800C4974E /* CBT Thought Diary */,
+				7598B28E2E78CB4B00859D57 /* CBT Thought DiaryTests 2 */,
 				75F92A8E2E1EEF9800C4974E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +113,7 @@
 				75AE4F742E76ED79007CB271 /* CBT Thought DiaryTests.xctest */,
 				7580FFE32E76F71E005DF751 /* ExercisesTests.xctest */,
 				758000052E76F7B9005DF751 /* Tests.xctest */,
+				7598B28D2E78CB4B00859D57 /* CBT Thought DiaryTests 2.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,6 +159,29 @@
 			);
 			productName = ExercisesTests;
 			productReference = 7580FFE32E76F71E005DF751 /* ExercisesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7598B28C2E78CB4B00859D57 /* CBT Thought DiaryTests 2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7598B2932E78CB4B00859D57 /* Build configuration list for PBXNativeTarget "CBT Thought DiaryTests 2" */;
+			buildPhases = (
+				7598B2892E78CB4B00859D57 /* Sources */,
+				7598B28A2E78CB4B00859D57 /* Frameworks */,
+				7598B28B2E78CB4B00859D57 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7598B2922E78CB4B00859D57 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				7598B28E2E78CB4B00859D57 /* CBT Thought DiaryTests 2 */,
+			);
+			name = "CBT Thought DiaryTests 2";
+			packageProductDependencies = (
+			);
+			productName = "CBT Thought DiaryTests 2";
+			productReference = 7598B28D2E78CB4B00859D57 /* CBT Thought DiaryTests 2.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		75AE4F732E76ED79007CB271 /* CBT Thought DiaryTests */ = {
@@ -199,6 +244,10 @@
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 75F92A8C2E1EEF9800C4974E;
 					};
+					7598B28C2E78CB4B00859D57 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 75F92A8C2E1EEF9800C4974E;
+					};
 					75AE4F732E76ED79007CB271 = {
 						CreatedOnToolsVersion = 16.4;
 						LastSwiftMigration = 1640;
@@ -227,6 +276,7 @@
 				75AE4F732E76ED79007CB271 /* CBT Thought DiaryTests */,
 				7580FFE22E76F71E005DF751 /* ExercisesTests */,
 				758000042E76F7B9005DF751 /* Tests */,
+				7598B28C2E78CB4B00859D57 /* CBT Thought DiaryTests 2 */,
 			);
 		};
 /* End PBXProject section */
@@ -240,6 +290,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7580FFE12E76F71E005DF751 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7598B28B2E78CB4B00859D57 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +334,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7598B2892E78CB4B00859D57 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		75AE4F702E76ED79007CB271 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -303,6 +367,11 @@
 			isa = PBXTargetDependency;
 			target = 75F92A8C2E1EEF9800C4974E /* CBT Thought Diary */;
 			targetProxy = 7580FFE72E76F71E005DF751 /* PBXContainerItemProxy */;
+		};
+		7598B2922E78CB4B00859D57 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F92A8C2E1EEF9800C4974E /* CBT Thought Diary */;
+			targetProxy = 7598B2912E78CB4B00859D57 /* PBXContainerItemProxy */;
 		};
 		75AE4F762E76ED79007CB271 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -391,6 +460,52 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBT Thought Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CBT Thought Diary";
 				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7598B2942E78CB4B00859D57 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2DU8PTN9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "misho.CBT-Thought-DiaryTests-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBT Thought Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CBT Thought Diary";
+				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Debug;
+		};
+		7598B2952E78CB4B00859D57 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B2DU8PTN9S;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "misho.CBT-Thought-DiaryTests-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CBT Thought Diary.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CBT Thought Diary";
+				XROS_DEPLOYMENT_TARGET = 2.5;
 			};
 			name = Release;
 		};
@@ -653,6 +768,15 @@
 			buildConfigurations = (
 				7580FFE92E76F71E005DF751 /* Debug */,
 				7580FFEA2E76F71E005DF751 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7598B2932E78CB4B00859D57 /* Build configuration list for PBXNativeTarget "CBT Thought DiaryTests 2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7598B2942E78CB4B00859D57 /* Debug */,
+				7598B2952E78CB4B00859D57 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

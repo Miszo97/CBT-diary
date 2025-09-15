@@ -63,6 +63,17 @@
                ReferencedContainer = "container:CBT Thought Diary.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "7598B28C2E78CB4B00859D57"
+               BuildableName = "CBT Thought DiaryTests 2.xctest"
+               BlueprintName = "CBT Thought DiaryTests 2"
+               ReferencedContainer = "container:CBT Thought Diary.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

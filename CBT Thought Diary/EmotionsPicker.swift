@@ -13,7 +13,7 @@ struct EmotionsPicker: View {
     
     var body: some View {
         HStack{
-            EmotionButton(selectedEmotions: $selected, emotionName: "Radość")
+            EmotionButton(selectedEmotions: $selected, emotionName: "Lęk")
             EmotionButton(selectedEmotions: $selected, emotionName: "Smutek")
             EmotionButton(selectedEmotions: $selected, emotionName: "Żal")
         }
