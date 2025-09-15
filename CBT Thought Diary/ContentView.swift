@@ -7,6 +7,7 @@ struct ContentView: View {
     @State var thought: String = ""
     @State var action: String = ""
     @State var date: Date
+    let emotions_names : [String] = ["Lęk", "Smutek", "Złość"]
     
     @State private var records: [Record] = []
 
@@ -17,26 +18,17 @@ struct ContentView: View {
             Text("CBT").font(.title2).padding(10)
             SituationInputView(situation: $situation)
             ThoughtInputView(thought: $thought)
-            
-
-            if !selected.isEmpty {
-                Text(
-                    selected.map { emotion in
-                        if let level = emotion.level {
-                            return "\(emotion.name) \(level)"
-                        } else {
-                            return emotion.name
-                        }
-                    }.joined(separator: ", ")
-                )
-                .padding(20)
-            }
+            EmotionsPicker(selected: $selected)
+    
             
             Action(action: $action)
             DatePicker("Date", selection: $date).padding(20)
             
 
             HStack {
+                Button("Send") {
+                    date = Date()
+                }.padding(.horizontal)
                 Button("Clear") {
                     date = Date()
                 }.padding(.horizontal)
